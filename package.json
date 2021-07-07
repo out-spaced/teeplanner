@@ -4,7 +4,10 @@
   "description": "",
   "main": "public/bundle.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node ./server/index.js",
+    "react-dev": "npx webpack",
+    "server-dev": "nodemon ./server/index.js"
   },
   "repository": {
     "type": "git",
