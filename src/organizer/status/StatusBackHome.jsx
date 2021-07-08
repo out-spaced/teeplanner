@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BackToHome({bh}) {
+function StatusBackHome({bh}) {
 
 
   return (
@@ -12,4 +12,4 @@ function BackToHome({bh}) {
   )
 }
 
-export default BackToHome
+export default StatusBackHome

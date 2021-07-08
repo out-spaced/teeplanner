@@ -5,12 +5,16 @@ import Status from './status/Status';
 import TimeDateSelect from './timeDateSelect/TimeDateSelect';
 import Complete from './complete/Complete';
 
-function Organizer() {
+function Organizer({bh}) {
   const [step, setStep] = useState(0);
   let currentStep;
 
-  function nextStep() {
-    setStep(step + 1);
+  function nextStep(home = null) {
+    if (home === 'home') {
+      setStep(0)
+    } else {
+      setStep(step + 1);
+    }
   }
 
   switch(step) {
@@ -24,10 +28,10 @@ function Organizer() {
       currentStep = <TimeDateSelect ns={nextStep} />;
       break;
     case 3:
-      currentStep = <Complete ns={nextStep}/>;
+      currentStep = <Complete ns={nextStep} bh={bh}/>;
       break;
     case 4:
-      currentStep = <Status />;
+      currentStep = <Status bh={bh}/>;
       break;
   }
 

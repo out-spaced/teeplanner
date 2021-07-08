@@ -1,14 +1,14 @@
 import React from 'react';
 import StatusItem from './StatusItem';
-import BackToHome from '../complete/BackToHome';
+import StatusBackHome from './StatusBackHome';
 
-function Status(  ) {
+function Status( {bh} ) {
   return (
     <div>
       <div>
         <StatusItem />
       </div>
-        <BackToHome />
+        <StatusBackHome bh={bh}/>
     </div>
   )
 }

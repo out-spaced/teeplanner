@@ -2,7 +2,7 @@ import React from 'react';
 import CheckStatus from './CheckStatus';
 import BackToHome from './BackToHome';
 
-function Complete({ns}) {
+function Complete({ns, bh}) {
 
 
   return (
@@ -12,7 +12,7 @@ function Complete({ns}) {
           All done! Will notify you at some point
         </span>
       </div>
-      <BackToHome />
+      <BackToHome bh={bh}/>
       <CheckStatus ns={ns}/>
     </div>
   )

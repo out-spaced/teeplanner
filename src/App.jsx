@@ -11,48 +11,52 @@ function App() {
     setStart(true);
   }
 
+  function backHome() {
+    setStart(false);
+  }
+
   if (start  === false) {
     return (
-      <div className="container-fluid">
-      <div id="app-container">
-        <div id="nav">
-          <Login />
-          <Register />
-        </div>
-        <div>
-          <h1>
-            Tee Planner
-          </h1>
-        </div>
+      <div id="app-outer">
         <div id="app-container">
-          <div>
-            <span>
-              Begin planning your Tee time
-            </span>
+          <div id="nav">
+            <Login />
+            <Register />
           </div>
-          <div>
-            <button onClick={startPlanning} type="button">Start Planning</button>
+          <div id="main-banner">
+            <h1>
+              Tee Planner
+            </h1>
+          </div>
+          <div id="app-container">
+            <div className="row-default">
+              <span>
+                Begin planning your Tee time
+              </span>
+            </div>
+            <div className="row-default">
+              <button onClick={startPlanning} type="button">Start Planning</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     );
   }
 
   return (
-    <div className="container-fluid">
+    <div id="app-outer">
       <div id="app-container">
         <div id="nav">
           <Login />
           <Register />
         </div>
-        <div>
+        <div id="main-banner">
           <h1>
             Tee Planner
           </h1>
         </div>
         <div id="app-container">
-          <Organizer />
+          <Organizer bh={backHome}/>
         </div>
       </div>
     </div>
