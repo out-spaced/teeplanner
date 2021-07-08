@@ -12,6 +12,9 @@ function Guests({ns}) {
       </div>
       <div>
         <GuestItem />
+        <GuestItem />
+        <GuestItem />
+        <GuestItem />
       </div>
       <div>
         <GuestSubmit ns={ns}/>
@@ -21,3 +24,7 @@ function Guests({ns}) {
 }
 
 export default Guests
+
+Guests.propTypes = {
+  ns: React.propTypes.function
+}

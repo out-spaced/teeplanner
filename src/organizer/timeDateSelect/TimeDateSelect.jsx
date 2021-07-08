@@ -15,3 +15,7 @@ function TimeDateSelect({ns}) {
 }
 
 export default TimeDateSelect
+
+TimeDateSelect.propTypes = {
+  ns: React.propTypes.function
+}

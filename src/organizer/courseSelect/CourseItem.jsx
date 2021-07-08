@@ -22,3 +22,7 @@ function CourseItem( {ns} ) {
 }
 
 export default CourseItem
+
+CourseItem.propTypes = {
+  ns: React.propTypes.function
+}

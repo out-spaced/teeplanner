@@ -11,3 +11,7 @@ function CourseSelect( {ns} ) {
 }
 
 export default CourseSelect
+
+CourseSelect.propTypes = {
+  ns: React.propTypes.function
+}

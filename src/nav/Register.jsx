@@ -1,15 +1,15 @@
 import React from 'react';
 
-function BackToHome() {
+function Register() {
 
 
   return (
     <div>
       <button>
-        Back to Home
+        Register
       </button>
     </div>
   )
 }
 
-export default BackToHome
+export default Register

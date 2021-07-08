@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Organizer from './organizer/Organizer';
 
-
 function App() {
   const [start, setStart] = useState(false);
   let render;
@@ -22,8 +21,14 @@ function App() {
   }
 
   return (
-    <div>
-      {render}
+    <div className="container-fluid">
+      <div className="nav">
+        <Login />
+        <Register />
+      </div>
+      <div id="app-container">
+        {render}
+      </div>
     </div>
   )
 }

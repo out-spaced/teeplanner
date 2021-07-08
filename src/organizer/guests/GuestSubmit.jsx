@@ -12,3 +12,7 @@ function GuestSubmit( {ns} ) {
 }
 
 export default GuestSubmit
+
+GuestSubmit.propTypes = {
+  ns: React.propTypes.function
+}

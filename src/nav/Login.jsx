@@ -1,15 +1,15 @@
 import React from 'react';
 
-function BackToHome() {
+function Login() {
 
 
   return (
     <div>
-      <button>
-        Back to Home
+      <button >
+        Login
       </button>
     </div>
   )
 }
 
-export default BackToHome
+export default Login
