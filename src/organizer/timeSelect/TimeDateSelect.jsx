@@ -7,6 +7,10 @@ function TimeDateSelect({ns}) {
   return (
     <div>
       <TimeSelect />
+      <TimeSelect />
+      <TimeSelect />
+      <TimeSelect />
+      <TimeSelect />
       <TimeDateSubmit ns={ns}/>
     </div>
   )
