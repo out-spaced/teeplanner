@@ -4,9 +4,7 @@ function TimeSelectChoose() {
 
   return (
     <div>
-      <button type="button">
-        choose
-      </button>
+      <input className="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
     </div>
   )
 }

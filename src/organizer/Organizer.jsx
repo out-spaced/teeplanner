@@ -2,9 +2,10 @@ import React, { useState, useEffect} from 'react';
 import CourseSelect from './courseSelect/CourseSelect';
 import Guests from './guests/Guests';
 import Status from './status/Status';
-import TimeDateSelect from './timeDateSelect/TimeDateSelect';
+import TimeDateSelect from './timeSelect/TimeDateSelect';
 import Complete from './complete/Complete';
 import StepNumber from './stepNumber/StepNumber';
+import DateSelect from './dateSelect/DateSelect';
 
 function Organizer({bh}) {
   const [step, setStep] = useState(1);
@@ -26,12 +27,15 @@ function Organizer({bh}) {
       currentStep = <CourseSelect ns={nextStep} />;
       break;
     case 3:
-      currentStep = <TimeDateSelect ns={nextStep} />;
+      currentStep = <DateSelect ns={nextStep} />;
       break;
     case 4:
-      currentStep = <Complete ns={nextStep} bh={bh}/>;
+      currentStep = <TimeDateSelect ns={nextStep} />;
       break;
     case 5:
+      currentStep = <Complete ns={nextStep} bh={bh}/>;
+      break;
+    case 6:
       currentStep = <Status bh={bh}/>;
       break;
   }

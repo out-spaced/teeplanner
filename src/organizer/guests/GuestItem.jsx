@@ -8,7 +8,7 @@ function GuestItem(  ) {
         Guest email:
       </span>
       <span>
-        <input type="text" defaultValue="a@example.com"/>
+        <input className="form-control" type="text" defaultValue="a@example.com"/>
       </span>
     </div>
   )

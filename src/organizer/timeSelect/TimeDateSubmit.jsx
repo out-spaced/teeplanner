@@ -3,7 +3,7 @@ import React from 'react';
 function TimeDateSubmit({ns}) {
 
   return (
-    <div>
+    <div className="row-default">
       <button onClick={ns} type="button">
         Submit
       </button>

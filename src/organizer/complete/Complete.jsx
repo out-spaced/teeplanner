@@ -12,8 +12,10 @@ function Complete({ns, bh}) {
           All done! Will notify you at some point
         </span>
       </div>
-      <BackToHome bh={bh}/>
-      <CheckStatus ns={ns}/>
+      <div className="row-default">
+        <BackToHome bh={bh}/>
+        <CheckStatus ns={ns}/>
+      </div>
     </div>
   )
 }

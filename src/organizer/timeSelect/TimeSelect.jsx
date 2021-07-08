@@ -5,7 +5,7 @@ import TimeSelectChoose from './TimeSelectChoose';
 function TimeSelect() {
 
   return (
-    <div>
+    <div className="time-select row-default">
       <span>
         <TimeSelectItem />
       </span>
