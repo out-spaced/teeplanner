@@ -6,19 +6,17 @@ import GuestNumber from './GuestNumber';
 function Guests({ns}) {
 
   return (
-    <div>
-      <div>
+    <div id="guests">
+      <div id="guest-num">
         <GuestNumber />
       </div>
-      <div>
+      <div id="guest-item-list">
         <GuestItem />
         <GuestItem />
         <GuestItem />
         <GuestItem />
       </div>
-      <div>
-        <GuestSubmit ns={ns}/>
-      </div>
+      <GuestSubmit ns={ns}/>
     </div>
   )
 }
@@ -26,5 +24,5 @@ function Guests({ns}) {
 export default Guests
 
 // Guests.propTypes = {
-//   ns: React.propTypes.function
+//   ns: React.PropTypes.function
 // }

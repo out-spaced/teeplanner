@@ -10,6 +10,6 @@ function CourseSubmit( {ns} ) {
 
 export default CourseSubmit
 
-// GuestSubmit.propTypes = {
-//   ns: React.propTypes.function
+// CourseSubmit.propTypes = {
+//   ns: React.PropTypes.function
 // }

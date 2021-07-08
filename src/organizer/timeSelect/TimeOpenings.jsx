@@ -1,12 +1,12 @@
 import React from 'react';
 
-function TimeSelectItem() {
+function TimeOpenings() {
 
   return (
     <span className="guest-time-text">
-      2:00 PM
+      5 Openings
     </span>
   )
 }
 
-export default TimeSelectItem
+export default TimeOpenings

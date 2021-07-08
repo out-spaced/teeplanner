@@ -1,17 +1,14 @@
 import React from 'react';
 import TimeSelectItem from './TimeSelectItem';
 import TimeSelectChoose from './TimeSelectChoose';
-
+import TimeOpenings from './TimeOpenings';
 function TimeSelect() {
 
   return (
     <div className="time-select row-default">
-      <span>
-        <TimeSelectItem />
-      </span>
-      <span>
-        <TimeSelectChoose />
-      </span>
+      <TimeSelectItem />
+      <TimeOpenings />
+      <TimeSelectChoose />
     </div>
   )
 }

@@ -18,8 +18,9 @@ function CourseSelect( {ns} ) {
   );
 }
 
+// CourseSelect.propTypes = {
+//   ns: React.PropTypes.function
+// }
+
 export default CourseSelect
 
-// CourseSelect.propTypes = {
-//   ns: React.propTypes.function
-// }

@@ -3,9 +3,9 @@ import React from 'react';
 function TimeSelectChoose() {
 
   return (
-    <div>
+    <span>
       <input className="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." />
-    </div>
+    </span>
   )
 }
 

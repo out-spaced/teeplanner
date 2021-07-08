@@ -24,7 +24,7 @@ function App() {
 
   if (start  === false) {
     render = (
-      <div id="app-container">
+      <div id="lower-app">
         <div className="row-default">
           <span>
             Begin planning your Tee time
@@ -39,9 +39,7 @@ function App() {
   }
   else {
     render = (
-      <div id="app-container">
-        <Organizer bh={backHome}/>
-      </div>
+      <Organizer bh={backHome}/>
     )
   }
 
