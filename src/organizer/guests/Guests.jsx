@@ -1,9 +1,9 @@
 import React from 'react';
-import GuestItem from 'GuestItem';
-import GuestSubmit from 'GuestSubmit';
-import GuestNumber from 'GuestNumber';
+import GuestItem from './GuestItem';
+import GuestSubmit from './GuestSubmit';
+import GuestNumber from './GuestNumber';
 
-function Guests() {
+function Guests({ns}) {
 
   return (
     <div>
@@ -14,7 +14,7 @@ function Guests() {
         <GuestItem />
       </div>
       <div>
-        <GuestSubmit />
+        <GuestSubmit ns={ns}/>
       </div>
     </div>
   )

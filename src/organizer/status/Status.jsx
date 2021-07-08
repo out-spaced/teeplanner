@@ -1,5 +1,5 @@
 import React from 'react';
-import StatusItem from 'StatusItem';
+import StatusItem from './StatusItem';
 
 function Status(  ) {
   return (

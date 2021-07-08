@@ -1,5 +1,5 @@
 import React from 'react';
-import GuestTimeSelectItem from 'GuestTimeSelectItem';
+import GuestTimeSelectItem from './GuestTimeSelectItem';
 
 function GuestTimeSelect() {
 

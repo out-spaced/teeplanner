@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-function CourseItem( {ch} ) {
+function CourseItem( {ns} ) {
   return (
     <div>
       <div>
        <img alt="course" src="http://placecorgi.com/250" />
       </div>
-      <div onClick={ch}>
+      <div onClick={ns}>
         <span>
           Course Name
         </span>

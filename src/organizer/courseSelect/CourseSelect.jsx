@@ -1,15 +1,11 @@
 import React from 'react';
-import CourseItem from 'CourseItem';
+import CourseItem from './CourseItem';
 
-function CourseSelect() {
-
-  function courseClick() {
-
-  }
+function CourseSelect( {ns} ) {
 
   return (
     <div>
-      <CourseItem ch={courseClick} />
+      <CourseItem ns={ns} />
     </div>
   )
 }

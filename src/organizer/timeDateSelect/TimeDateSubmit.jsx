@@ -1,7 +1,7 @@
 import React from 'react';
 
+function TimeDateSubmit({ns}) {
 
-function GuestSubmit( {ns} ) {
   return (
     <div>
       <button onClick={ns} type="button">
@@ -11,4 +11,4 @@ function GuestSubmit( {ns} ) {
   )
 }
 
-export default GuestSubmit
+export default TimeDateSubmit

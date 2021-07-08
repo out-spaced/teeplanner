@@ -5,7 +5,7 @@ function GuestItem(  ) {
   return (
     <div>
       <span>
-        input label
+        Guest email:
       </span>
       <span>
         <input type="text" />
