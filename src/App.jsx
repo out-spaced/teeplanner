@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <span>Begin planning your Tee time</span>
-      <button type="button">here</button>
+      <button type="button">Course Select</button>
     </div>
   )
 }
