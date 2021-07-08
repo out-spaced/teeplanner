@@ -4,7 +4,7 @@ import React from 'react';
 function GuestSubmit( {ns} ) {
   return (
     <div className="row-default">
-      <button onClick={ns} type="button">
+      <button className="btn btn-primary" onClick={ns} type="button">
         Submit
       </button>
     </div>

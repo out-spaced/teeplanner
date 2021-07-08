@@ -5,7 +5,7 @@ function Register() {
 
   return (
     <div>
-      <button>
+      <button className="btn btn-primary">
         Register
       </button>
     </div>

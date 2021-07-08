@@ -5,7 +5,7 @@ function generateGuestTimes(partyId, userId) {
       <span>
         2:00 PM
       </span>
-    <div>
+    </div>
     <div>
       <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></input>
     </div>

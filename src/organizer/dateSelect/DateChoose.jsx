@@ -4,7 +4,7 @@ function DateChoose( {ns} ) {
 
   return (
     <div className="row-default">
-      <button type="button" onClick={ns}>
+      <button className="btn btn-primary" type="button" onClick={ns}>
         Choose
       </button>
     </div>

@@ -5,7 +5,7 @@ function CheckStatus({ns}) {
 
   return (
     <div>
-      <button onClick={ns}>
+      <button className="btn btn-primary" onClick={ns}>
         Check Status
       </button>
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function CourseSubmit( {ns} ) {
   return (
-    <button onClick={ns} type="button">
+    <button className="btn btn-primary" onClick={ns} type="button">
       Submit
     </button>
   )

@@ -31,8 +31,8 @@ function App() {
           </span>
         </div>
         <div className="row-default">
-          <button onClick={startPlanning} type="button">Start Planning</button>
-          <button onClick={checkStatus} type="button">Check Status</button>
+          <button className="btn btn-primary" onClick={startPlanning} type="button">Start Planning</button>
+          <button className="btn btn-primary" onClick={checkStatus} type="button">Check Status</button>
         </div>
       </div>
     );

@@ -11,6 +11,10 @@ function DateSelect({ns}) {
   const tomorrow = today;
   tomorrow.setDate(day + 1);
   maxDate.setDate(day + 31);
+
+  function dateChange() {
+    // do something...
+  }
   return (
     <div className="column-default">
       <Calendar
@@ -18,6 +22,7 @@ function DateSelect({ns}) {
         value={value}
         minDate={tomorrow}
         maxDate={maxDate}
+        onChange={dateChange}
       />
       <DateChoose ns={ns}/>
     </div>

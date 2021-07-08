@@ -5,7 +5,7 @@ function StatusBackHome({bh}) {
 
   return (
     <div>
-      <button onClick={bh}>
+      <button className="btn btn-primary" onClick={bh}>
         Back to Home
       </button>
     </div>
