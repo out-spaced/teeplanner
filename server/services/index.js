@@ -1,24 +1,31 @@
 function generateGuestTimes(partyId, userId) {
-  const timeOne = `
-  <div class="row-default">
-    <div>
-      <span>
-        2:00 PM
+  const topHtml = `
+  <div class="row-default guest-time-wrapper">
+    <div class="guest-time-wrapper column-default">
+      <span class="guest-time-text">
+  `
+  const bottomHtml = `
       </span>
     </div>
-    <div>
+    <div class="guest-checkbox column-default">
       <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..."></input>
     </div>
   </div>
   `;
-  const times = timeOne + timeOne + timeOne
+  const time1 = '2:00 PM'
+  const time2 = '3:00 PM'
+  const time3 = '4:00 PM'
+  const one = topHtml + time1 + bottomHtml;
+  const two = topHtml + time2 + bottomHtml;
+  const three = topHtml + time3 + bottomHtml;
+  const times = one + two + three
   return times;
 }
 
 function generateSubmit() {
   const submit = `
-  <div>
-    <button type="button">
+  <div class="row-default">
+    <button type="button" class="btn btn-primary">
       Submit
     </button>
   </div>
@@ -40,9 +47,13 @@ function generateJoinHtml(partyId, userId) {
       <link rel="stylesheet" href="assets/stylesheet.css">
     </head>
     <body>
-      <div class="container-fluid" id="app">
+      <div class="container-fluid" id="party-container">
         <div class="row-default">
           <div class="column-default">
+            <div class="guest-hello column-default">
+              <h3> Hello, Alex </h3>
+              <h6> Choose the times you're available </h6>
+            </div>
   `);
   const endHtml = (`
           <div>
