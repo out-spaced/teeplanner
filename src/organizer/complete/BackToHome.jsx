@@ -4,7 +4,7 @@ function BackToHome({bh}) {
 
 
   return (
-    <div>
+    <div className="row-default">
       <button onClick={bh}>
         Back to Home
       </button>
