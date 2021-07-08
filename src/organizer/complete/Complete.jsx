@@ -20,6 +20,6 @@ function Complete({ns}) {
 
 export default Complete
 
-Complete.propTypes = {
-  ns: React.propTypes.function
-}
+// Complete.propTypes = {
+//   ns: React.propTypes.function
+// }

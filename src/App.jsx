@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Organizer from './organizer/Organizer';
+import Login from './nav/Login';
+import Register from './nav/Register';
 
 function App() {
   const [start, setStart] = useState(false);

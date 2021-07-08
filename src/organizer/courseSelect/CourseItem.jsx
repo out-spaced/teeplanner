@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 function CourseItem( {ns} ) {
   return (
     <div>
@@ -18,11 +17,11 @@ function CourseItem( {ns} ) {
         </span>
       </div>
     </div>
-  )
+  );
 }
 
 export default CourseItem
 
-CourseItem.propTypes = {
-  ns: React.propTypes.function
-}
+// CourseItem.propTypes = {
+//   ns: React.propTypes.function
+// }

@@ -7,11 +7,11 @@ function CourseSelect( {ns} ) {
     <div>
       <CourseItem ns={ns} />
     </div>
-  )
+  );
 }
 
 export default CourseSelect
 
-CourseSelect.propTypes = {
-  ns: React.propTypes.function
-}
+// CourseSelect.propTypes = {
+//   ns: React.propTypes.function
+// }

@@ -13,6 +13,6 @@ function TimeDateSubmit({ns}) {
 
 export default TimeDateSubmit
 
-TimeDateSubmit.propTypes = {
-  ns: React.propTypes.function
-}
+// TimeDateSubmit.propTypes = {
+//   ns: React.propTypes.function
+// }

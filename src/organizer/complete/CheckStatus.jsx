@@ -14,6 +14,6 @@ function CheckStatus({ns}) {
 
 export default CheckStatus
 
-CheckStatus.propTypes = {
-  ns: React.propTypes.function
-}
+// CheckStatus.propTypes = {
+//   ns: React.propTypes.function
+// }

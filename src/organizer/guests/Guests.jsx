@@ -25,6 +25,6 @@ function Guests({ns}) {
 
 export default Guests
 
-Guests.propTypes = {
-  ns: React.propTypes.function
-}
+// Guests.propTypes = {
+//   ns: React.propTypes.function
+// }
