@@ -11,25 +11,49 @@ function App() {
     setStart(true);
   }
 
-  if (start  === true) {
-    render = <Organizer />
-  } else {
-    render = (
-      <div>
-        <span>Begin planning your Tee time</span>
-        <button onClick={startPlanning} type="button">Start Planning</button>
+  if (start  === false) {
+    return (
+      <div className="container-fluid">
+      <div id="app-container">
+        <div id="nav">
+          <Login />
+          <Register />
+        </div>
+        <div>
+          <h1>
+            Tee Planner
+          </h1>
+        </div>
+        <div id="app-container">
+          <div>
+            <span>
+              Begin planning your Tee time
+            </span>
+          </div>
+          <div>
+            <button onClick={startPlanning} type="button">Start Planning</button>
+          </div>
+        </div>
       </div>
+    </div>
     );
   }
 
   return (
     <div className="container-fluid">
-      <div className="nav">
-        <Login />
-        <Register />
-      </div>
       <div id="app-container">
-        {render}
+        <div id="nav">
+          <Login />
+          <Register />
+        </div>
+        <div>
+          <h1>
+            Tee Planner
+          </h1>
+        </div>
+        <div id="app-container">
+          <Organizer />
+        </div>
       </div>
     </div>
   )
