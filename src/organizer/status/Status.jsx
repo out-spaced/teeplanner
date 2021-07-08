@@ -7,6 +7,10 @@ function Status( {bh} ) {
     <div>
       <div>
         <StatusItem />
+        <StatusItem />
+        <StatusItem />
+        <StatusItem />
+        <StatusItem />
       </div>
         <StatusBackHome bh={bh}/>
     </div>

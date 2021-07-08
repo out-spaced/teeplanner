@@ -4,19 +4,22 @@ function CourseItem( {ns} ) {
   return (
     <div className="row-default">
       <div>
-       <img alt="course" src="http://placecorgi.com/250" />
+       <img alt="course" src="http://placecorgi.com/100" />
       </div>
-      <div className="column-default" onClick={ns}>
-        <div>
+      <div className="column-default">
+        <div className="row-default">
           <span>
             Course Name
           </span>
         </div>
-        <div>
+        <div className="row-default">
           <span>
             Course Location
           </span>
         </div>
+      </div>
+      <div className="row-default course-radio">
+        <input className="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="..." />
       </div>
     </div>
   );
