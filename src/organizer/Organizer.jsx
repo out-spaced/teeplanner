@@ -4,9 +4,10 @@ import Guests from './guests/Guests';
 import Status from './status/Status';
 import TimeDateSelect from './timeDateSelect/TimeDateSelect';
 import Complete from './complete/Complete';
+import StepNumber from './stepNumber/StepNumber';
 
 function Organizer({bh}) {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   let currentStep;
 
   function nextStep(home = null) {
@@ -18,28 +19,33 @@ function Organizer({bh}) {
   }
 
   switch(step) {
-    case 0:
+    case 1:
       currentStep = <Guests ns={nextStep} />;
       break;
-    case 1:
+    case 2:
       currentStep = <CourseSelect ns={nextStep} />;
       break;
-    case 2:
+    case 3:
       currentStep = <TimeDateSelect ns={nextStep} />;
       break;
-    case 3:
+    case 4:
       currentStep = <Complete ns={nextStep} bh={bh}/>;
       break;
-    case 4:
+    case 5:
       currentStep = <Status bh={bh}/>;
       break;
   }
 
-
   return (
     <div>
-      {currentStep}
+      <div>
+        {currentStep}
+      </div>
+      <div>
+        <StepNumber step={step}/>
+      </div>
     </div>
+
   )
 }
 
