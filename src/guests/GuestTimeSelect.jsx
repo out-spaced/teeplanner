@@ -1,11 +1,17 @@
 import React from 'react';
 import GuestTimeSelectItem from './GuestTimeSelectItem';
+import GuestSubmitTimes from './GuestSubmitTimes';
 
 function GuestTimeSelect() {
 
   return (
-    <div>
+    <div className="column-default">
       <GuestTimeSelectItem />
+      <GuestTimeSelectItem />
+      <GuestTimeSelectItem />
+      <GuestTimeSelectItem />
+      <GuestTimeSelectItem />
+      <GuestSubmitTimes />
     </div>
   )
 }
