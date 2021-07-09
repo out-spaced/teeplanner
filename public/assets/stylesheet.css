@@ -13,6 +13,8 @@ h3 {
 }
 .time-select {
   justify-content: space-around;
+  padding-top:.3em;
+  padding-bottom: .3em;
 }
 .course-radio {
   align-items: center;
@@ -34,6 +36,17 @@ h3 {
 .guest-time-text {
   font-size: 1.5rem;
 }
+.course-container {
+  justify-content: space-between;
+}
+.status-item-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+#complete-text {
+  display: flex;
+  justify-content: center;
+}
 #app-outer {
   padding-top: 3em;
   display: flex;
@@ -44,6 +57,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   min-width: 350px;
+  border: .1em solid black;
+  border-radius: .1em;
 }
 #party-container {
   padding-top: 3em;

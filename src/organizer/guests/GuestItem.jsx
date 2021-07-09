@@ -5,10 +5,10 @@ function GuestItem(  ) {
   return (
     <div>
       <span>
-        Guest email:
+        Guest phone number
       </span>
       <span>
-        <input className="form-control" type="text" defaultValue="a@example.com"/>
+        <input className="form-control" type="text" defaultValue="(123) 456-7890"/>
       </span>
     </div>
   )

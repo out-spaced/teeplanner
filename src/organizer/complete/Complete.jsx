@@ -6,9 +6,9 @@ function Complete({ns, bh}) {
 
 
   return (
-    <div>
-      <div>
-        <span>
+    <div id="complete-container">
+      <div id="complete-text">
+        <span className="text">
           All done! Will notify you at some point
         </span>
       </div>

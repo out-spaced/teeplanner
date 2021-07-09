@@ -2,8 +2,8 @@ import React from 'react';
 
 function CourseItem( {ns} ) {
   return (
-    <div className="row-default">
-      <div>
+    <div className="course-container row-default">
+      <div className="course-image-container">
        <img alt="course" src="http://placecorgi.com/100" />
       </div>
       <div className="column-default">

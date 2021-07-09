@@ -3,7 +3,7 @@ import React from 'react';
 
 function StatusItem(  ) {
   return (
-    <div>
+    <div className="status-item-container">
       <span>
         Guest Name
       </span>

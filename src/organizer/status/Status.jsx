@@ -4,8 +4,8 @@ import StatusBackHome from './StatusBackHome';
 
 function Status( {bh} ) {
   return (
-    <div>
-      <div>
+    <div id="status-container">
+      <div id="status-list-container">
         <StatusItem />
         <StatusItem />
         <StatusItem />
