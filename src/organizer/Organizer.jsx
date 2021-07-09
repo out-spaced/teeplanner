@@ -43,9 +43,7 @@ function Organizer({bh}) {
   return (
     <div id="lower-app">
       {currentStep}
-       <div>
-        <StepNumber step={step}/>
-      </div>
+      <StepNumber step={step}/>
     </div>
 
   )

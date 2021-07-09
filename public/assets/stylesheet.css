@@ -1,3 +1,8 @@
+button {
+  padding-left:.3em;
+  padding-right:.3em;
+}
+
 h3 {
   text-align: center;
 }
@@ -80,51 +85,41 @@ h3 {
 #lower-app-inner {
 
 }
-
-/*
-.custom-select:focus {
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+.div-right {
+  justify-content: flex-end;
 }
-
-.custom-select:focus::-ms-value {
-  color: #495057;
-  background-color: #fff;
+.div-right button {
+  justify-content: flex-end;
+  margin-right: 1em;
 }
+#main-image {
 
-.custom-select[multiple], .custom-select[size]:not([size="1"]) {
-  height: auto;
-  padding-right: 0.75rem;
-  background-image: none;
 }
-
-.custom-select:disabled {
-  color: #6c757d;
-  background-color: #e9ecef;
+#main-image img {
+  width: 300px;
+  object-fit: cover;
 }
-
-.custom-select::-ms-expand {
-  display: none;
+.step-text {
+  font-size: 1.2em;
 }
-
-.custom-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #495057;
+.step {
+  padding-left: .1em;
+  padding-right: .1em;
+  border:1px solid grey;
+  border-radius: 5px;
 }
-
-.custom-select-sm {
-  height: calc(1.5em + 0.5rem + 2px);
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  font-size: 0.875rem;
+#active-step {
+  background-color: rgb(95, 95, 255);
 }
-
-.custom-select-lg {
-  height: calc(1.5em + 1rem + 2px);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  font-size: 1.25rem;
-} */
+#active-step span {
+  color: white;
+}
+#completed-step {
+  background-color: rgb(10, 189, 10);
+}
+#completed-step span {
+  color: white;
+}
+#step-container {
+  padding-bottom: .5em;
+}

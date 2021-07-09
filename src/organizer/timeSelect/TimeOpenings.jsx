@@ -1,10 +1,10 @@
 import React from 'react';
 
 function TimeOpenings() {
-
+  const num = Math.floor(Math.random() * 10) + 4
   return (
     <span className="guest-time-text">
-      5 Openings
+      {num} Openings
     </span>
   )
 }

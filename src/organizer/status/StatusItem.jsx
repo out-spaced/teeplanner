@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-function StatusItem(  ) {
+function StatusItem({name, status}) {
   return (
     <div className="status-item-container">
       <span>
-        Guest Name
+        {name}
       </span>
       <span>
-        Guest Status
+        {status ? 'Confirmed' : 'Uncomfirmed'}
       </span>
     </div>
   )

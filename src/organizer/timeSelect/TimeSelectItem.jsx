@@ -1,10 +1,10 @@
 import React from 'react';
 
-function TimeSelectItem() {
+function TimeSelectItem({time}) {
 
   return (
     <span className="guest-time-text">
-      2:00 PM
+      {time}:00 PM
     </span>
   )
 }

@@ -30,6 +30,9 @@ function App() {
             Begin planning your Tee time
           </span>
         </div>
+        <div id="main-image" className="row-default">
+          <img src="assets/golf.jpg" />
+        </div>
         <div className="row-default">
           <button className="btn btn-primary" onClick={startPlanning} type="button">Start Planning</button>
           <button className="btn btn-primary" onClick={checkStatus} type="button">Check Status</button>

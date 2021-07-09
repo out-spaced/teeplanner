@@ -6,7 +6,7 @@ function GuestNumber( ) {
     <div className="row-default">
       <div>
         <span>
-          Minimum number to book reservation:
+          Min number to book reservation:
         </span>
       </div>
       <div>
