@@ -8,7 +8,7 @@ function StatusItem({name, status}) {
         {name}
       </span>
       <span>
-        {status ? 'Confirmed' : 'Uncomfirmed'}
+        {status}
       </span>
     </div>
   )

@@ -3,7 +3,7 @@ function generateGuestTimes(partyId, userId) {
   <div class="row-default guest-time-wrapper">
     <div class="guest-time-wrapper column-default">
       <span class="guest-time-text">
-  `
+  `;
   const bottomHtml = `
       </span>
     </div>
@@ -12,30 +12,31 @@ function generateGuestTimes(partyId, userId) {
     </div>
   </div>
   `;
-  const time1 = '2:00 PM'
-  const time2 = '3:00 PM'
-  const time3 = '4:00 PM'
+  const time1 = "2:00 PM";
+  const time2 = "3:00 PM";
+  const time3 = "4:00 PM";
   const one = topHtml + time1 + bottomHtml;
   const two = topHtml + time2 + bottomHtml;
   const three = topHtml + time3 + bottomHtml;
-  const times = one + two + three
+  const times = one + two + three;
   return times;
 }
 
-function generateSubmit() {
+function generateSubmit(partyId, userId) {
+  const names = ["", "alex", "bob", "john", "nick"];
   const submit = `
   <div class="row-default">
-    <button type="button" class="btn btn-primary">
+    <button type="submit" name="id" value="${userId}" class="btn btn-primary">
       Submit
     </button>
   </div>
-  `
-  return submit
+  `;
+  return submit;
 }
 
 function generateJoinHtml(partyId, userId) {
-  const startHtml =
-  (`
+  const names = ["", "alex", "bob", "john", "nick"];
+  const startHtml = `
   <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -51,11 +52,13 @@ function generateJoinHtml(partyId, userId) {
         <div class="row-default">
           <div class="column-default">
             <div class="guest-hello column-default">
-              <h3> Hello, Alex </h3>
+              <h3> Hello, ${names[userId]} </h3>
               <h6> Choose the times you're available </h6>
             </div>
-  `);
-  const endHtml = (`
+            <form action="" method="POST">
+  `;
+  const endHtml = `
+          </form>
           <div>
         </div>
       </div>
@@ -64,13 +67,13 @@ function generateJoinHtml(partyId, userId) {
       <div id="footer-div"></div>
     </footer>
   </html>
-  `)
+  `;
   const times = generateGuestTimes(partyId, userId);
-  const submit = generateSubmit();
+  const submit = generateSubmit(partyId, userId);
   const page = startHtml + times + submit + endHtml;
   return page;
 }
 
 module.exports = {
-  generateJoinHtml
-}
+  generateJoinHtml,
+};

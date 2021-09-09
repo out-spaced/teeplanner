@@ -9,5 +9,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.resolve(__dirname, '../public')));
 app.listen(3000);
 
-
 app.use('/', router);
+

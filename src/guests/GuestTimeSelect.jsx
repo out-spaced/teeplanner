@@ -1,9 +1,8 @@
-import React from 'react';
-import GuestTimeSelectItem from './GuestTimeSelectItem';
-import GuestSubmitTimes from './GuestSubmitTimes';
+import React from "react";
+import GuestTimeSelectItem from "./GuestTimeSelectItem";
+import GuestSubmitTimes from "./GuestSubmitTimes";
 
 function GuestTimeSelect() {
-
   return (
     <div className="column-default">
       <GuestTimeSelectItem />
@@ -13,7 +12,7 @@ function GuestTimeSelect() {
       <GuestTimeSelectItem />
       <GuestSubmitTimes />
     </div>
-  )
+  );
 }
 
-export default GuestTimeSelect
+export default GuestTimeSelect;

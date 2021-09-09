@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Organizer from './organizer/Organizer';
 import Login from './nav/Login';
 import Register from './nav/Register';
+import Status from './organizer/status/Status';
 
 function App() {
   const [start, setStart] = useState(false);
@@ -16,13 +17,17 @@ function App() {
   function backHome() {
     setStart(false);
     setStatus(false);
-  }
+   }
 
   function checkStatus() {
     setStatus(true);
   }
 
-  if (start  === false) {
+  if (status === true) {
+  render = (
+    <Status bh={backHome}/>
+  )
+  } else if (start  === false) {
     render = (
       <div id="lower-app">
         <div className="row-default">
@@ -39,8 +44,7 @@ function App() {
         </div>
       </div>
     );
-  }
-  else {
+  } else {
     render = (
       <Organizer bh={backHome}/>
     )

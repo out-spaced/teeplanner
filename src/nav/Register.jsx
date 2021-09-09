@@ -1,15 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Register() {
-
-
   return (
     <div>
-      <button className="btn btn-primary">
-        Register
-      </button>
+      <button className="btn btn-primary">Register</button>
     </div>
-  )
+  );
 }
 
-export default Register
+export default Register;

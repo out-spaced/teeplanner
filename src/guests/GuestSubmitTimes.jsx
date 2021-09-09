@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function GuestSubmitTimes( ) {
+function GuestSubmitTimes() {
   return (
     <div>
-      <button type="button">
-        Submit
-      </button>
+      <button type="button">Submit</button>
     </div>
-  )
+  );
 }
 
-export default GuestSubmitTimes
+export default GuestSubmitTimes;

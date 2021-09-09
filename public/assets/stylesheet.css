@@ -1,6 +1,6 @@
 button {
-  padding-left:.3em;
-  padding-right:.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
 }
 
 h3 {
@@ -18,8 +18,8 @@ h3 {
 }
 .time-select {
   justify-content: space-around;
-  padding-top:.3em;
-  padding-bottom: .3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 .course-radio {
   align-items: center;
@@ -29,11 +29,10 @@ h3 {
   margin-top: -2px;
 }
 .guest-checkbox input {
-
 }
 .guest-time-wrapper {
-  padding-bottom: .3em;
-  padding-top: .3em;
+  padding-bottom: 0.3em;
+  padding-top: 0.3em;
 }
 .guest-hello {
   padding-bottom: 1em;
@@ -58,18 +57,18 @@ h3 {
   justify-content: center;
 }
 #app-container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 350px;
-  border: .1em solid black;
-  border-radius: .1em;
+  border: 0.1em solid black;
+  border-radius: 0.1em;
 }
 #party-container {
   padding-top: 3em;
 }
 #nav {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -83,7 +82,6 @@ h3 {
   justify-content: space-between;
 }
 #lower-app-inner {
-
 }
 .div-right {
   justify-content: flex-end;
@@ -93,7 +91,6 @@ h3 {
   margin-right: 1em;
 }
 #main-image {
-
 }
 #main-image img {
   width: 300px;
@@ -103,10 +100,10 @@ h3 {
   font-size: 1.2em;
 }
 .step {
-  padding-left: .1em;
-  padding-right: .1em;
-  border:1px solid grey;
-  border-radius: 5px;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 #active-step {
   background-color: rgb(95, 95, 255);
@@ -121,5 +118,5 @@ h3 {
   color: white;
 }
 #step-container {
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }

@@ -1,37 +1,32 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import StatusItem from './StatusItem';
 import StatusBackHome from './StatusBackHome';
 
-function Status( {bh} ) {
-  const friendArray = [
-    {
-      name: 'alex',
-      status: true,
-    },
-    {
-      name: 'bob',
-      status: false,
-    },
-    {
-      name: 'john',
-      status: false,
-    },
-    {
-      name: 'nick',
-      status: false,
-    }
-  ]
+function Status({ bh }) {
+  const [loaded, setLoaded] = useState(false);
+  const [friends, setFriends] = useState([]);
+  useEffect(async () => {
+    let data = await fetch('/status');
+    data = await data.json();
+    data.shift();
+    setFriends(data);
+    setLoaded(true);
+  }, []);
+
+  if (!loaded) {
+    return 'Loading...';
+  }
 
   return (
-    <div id="status-container">
+    <div id="lower-app">
       <div id="status-list-container">
-        {
-        friendArray.map( (item, index) => <StatusItem name={item.name} status={item.status} key={index} /> )
-        }
+        {friends.map((item, index) => (
+          <StatusItem name={item.name} status={item.status} key={index} />
+        ))}
       </div>
-        <StatusBackHome bh={bh}/>
+      <StatusBackHome bh={bh} />
     </div>
-  )
+  );
 }
 
-export default Status
+export default Status;
